@@ -1,0 +1,50 @@
+header {
+  width: 100%;
+  background-color: brown;
+  font-weight: 100;
+  color: white;
+  font-family: "arial";
+}
+
+ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  border: 1px solid gray;
+  padding-left: 0;
+}
+
+.logo {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.logo:hover,
+.logo:focus {
+  background-color: transparent;
+}
+
+li {
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+}
+
+li:hover,
+li:focus {
+  background-color: rgb(219, 105, 105);
+}
+
+.active {
+  font-weight: bold;
+}
+
+@media (max-width: 690px) {
+  ul {
+    flex-wrap: wrap;
+  }
+
+  li {
+    width: 100%;
+    padding: 0.8rem;
+  }
+}
